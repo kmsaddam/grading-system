@@ -14,7 +14,7 @@
     let cgpa = '';
 
     if(isNaN(inputNumber) || inputMark < 0 || inputMark >100) {
-        document.write("Wrong input. Please type valid number. ")
+        document.write("Wrong input. Please type valid number. ");
     } else {
 
         switch(true) {
@@ -23,11 +23,38 @@
                 cgpa = '5.00';
             break;
 
-            case inputMark >= 80:
-                grade = 'A+';
-                cgpa = '5.00';
+            case inputMark >= 70:
+                grade = 'A';
+                cgpa = '4.00';
+            break;
+
+            case inputMark >= 60:
+                grade = 'A-';
+                cgpa = '3.50';
+            break;
+
+            case inputMark >= 50:
+                grade = 'B';
+                cgpa = '3.00';
+            break;
+
+            case inputMark >= 40:
+                grade = 'C';
+                cgpa = '2.00';
+            break;
+
+            case inputMark >= 33:
+                grade = 'D';
+                cgpa = '1.00';
+            break;
+
+            default:
+                grade = 'F';
+                cgpa = '0.00';
             break;
         }
+
+
 
     }
 
