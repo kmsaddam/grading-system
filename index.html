@@ -13,7 +13,7 @@
     let grade = '';
     let cgpa = '';
 
-    if(isNaN(inputNumber) || inputMark < 0 || inputMark >100) {
+    if(isNaN(inputMark) || inputMark < 0 || inputMark >100) {
         document.write("Wrong input. Please type valid number. ");
     } else {
 
@@ -54,7 +54,7 @@
             break;
         }
 
-
+        document.write(`Your mark is: ${inputMark}. Grade is: ${grade}. CGPA is: ${cgpa}`);
 
     }
 
